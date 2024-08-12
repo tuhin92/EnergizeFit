@@ -3,46 +3,48 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const navLinks = <>
-        <li>
-            <NavLink
-                to="/"
-                className={({ isActive }) =>
-                    isActive ? 'text-blue-500' : 'text-gray-500'
-                }
-            >
-                Home
-            </NavLink>
-        </li>
-        <li>
-            <NavLink
-                to="/service"
-                className={({ isActive }) =>
-                    isActive ? 'text-blue-500' : 'text-gray-500'
-                }
-            >
-                Service
-            </NavLink>
-        </li>
-        <li>
-            <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                    isActive ? 'text-blue-500' : 'text-gray-500'
-                }
-            >
-                Contact
-            </NavLink>
-        </li>
-        <li>
-            <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                    isActive ? 'text-blue-500' : 'text-gray-500'
-                }
-            >
-                About
-            </NavLink>
-        </li>
+        <div className="border border-[#323131b3] rounded-full flex space-x-4">
+    <li>
+      <NavLink 
+        to="/" 
+        className={({ isActive }) => 
+          isActive ? 'text-blue-500' : 'text-gray-500'
+        }
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/service" 
+        className={({ isActive }) => 
+          isActive ? 'text-blue-500' : 'text-gray-500'
+        }
+      >
+        Service
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/contact" 
+        className={({ isActive }) => 
+          isActive ? 'text-blue-500' : 'text-gray-500'
+        }
+      >
+        Contact
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/about" 
+        className={({ isActive }) => 
+          isActive ? 'text-blue-500' : 'text-gray-500'
+        }
+      >
+        About
+      </NavLink>
+    </li>
+  </div>
     </>
     return (
         <div className="navbar  max-w-7xl mx-auto py-8">
