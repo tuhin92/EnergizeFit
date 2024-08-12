@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 const Main = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
