@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div>
-            <div className="hero  min-h-screen bg-gradient-to-r from-[#000000] via-[#280404b3] to-[#000000]">
+            <div className="hero  min-h-screen ">
                 <div className="hero-content justify-around flex-col lg:flex-row-reverse">
                     <img
                         className='h-auto max-w-96'
