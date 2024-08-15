@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner';
 import Habbits from '../../../Components/Habbits';
 import Trainings from '../../../Components/Trainings';
+import BMI_calculator from '../../../Components/BMI_calculator';
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <Habbits></Habbits>
             <Trainings></Trainings>
+            <BMI_calculator></BMI_calculator>
         </div>
     );
 };
