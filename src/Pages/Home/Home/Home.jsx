@@ -3,6 +3,7 @@ import Banner from '../Banner';
 import Habbits from '../../../Components/Habbits';
 import Trainings from '../../../Components/Trainings';
 import BMI_calculator from '../../../Components/BMI_calculator';
+import Team from '../../../Components/Team';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Habbits></Habbits>
             <Trainings></Trainings>
             <BMI_calculator></BMI_calculator>
+            <Team></Team>
         </div>
     );
 };
