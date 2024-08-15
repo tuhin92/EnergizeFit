@@ -83,7 +83,7 @@ const Habbits = () => {
                     <div className='p-8'>
                         <h1 className="text-5xl font-bold">Run an Extra <br />
                             Mile Easily</h1>
-                        <p className="py-6">
+                        <p className="py-6 text-[#767575]">
                             We believe fitness should be accessible to everyone, <br /> everywhere, regardless of income or access to a gym. With <br /> hundreds of professional workouts.
                         </p>
                         <button className="btn bg-[#E6533C] text-white rounded-full px-12">Join Now!</button>
