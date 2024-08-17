@@ -144,20 +144,20 @@ const Service = () => {
                     </div>
                     <div className="card w-96 mt-4">
                         <img
-                            src="https://images.pexels.com/photos/3766217/pexels-photo-3766217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Push Up"
                             className="rounded-xl" />
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">Swimming</h2>
                         </div>
                     </div>
-                    <div className="card w-96 mt-4">
+                    <div className="card w-full mt-4">
                         <img
-                            src="https://images.pexels.com/photos/3766217/pexels-photo-3766217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            src="https://images.pexels.com/photos/6516165/pexels-photo-6516165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Push Up"
                             className="rounded-xl" />
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">Stretching</h2>
+                            <h2 className="card-title">Burpees</h2>
                         </div>
                     </div>
                 </div>
