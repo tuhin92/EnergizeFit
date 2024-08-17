@@ -21,17 +21,17 @@ const Navbar = () => {
           isActive ? 'text-blue-500' : 'text-gray-500'
         }
       >
-        Service
+        Services
       </NavLink>
     </li>
     <li>
       <NavLink 
-        to="/contact" 
+        to="/price&schedule" 
         className={({ isActive }) => 
           isActive ? 'text-blue-500' : 'text-gray-500'
         }
       >
-        Contact
+        Price & Schedule
       </NavLink>
     </li>
     <li>
@@ -41,7 +41,7 @@ const Navbar = () => {
           isActive ? 'text-blue-500' : 'text-gray-500'
         }
       >
-        About
+        About Us
       </NavLink>
     </li>
   </div>
