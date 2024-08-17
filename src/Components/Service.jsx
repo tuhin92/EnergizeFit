@@ -10,7 +10,7 @@ const Service = () => {
             <div className='mt-8'>
                 <h2 className='text-2xl font-bold text-[#E6533C] text-center'>Strength Training Exercises</h2>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center'>
 
                     <div className="card w-96 mt-4">
                         <img
@@ -80,7 +80,7 @@ const Service = () => {
 
                 {/* Flexibility and Mobility Exercises  */}
                 <h2 className='text-2xl font-bold text-[#E6533C] text-center mt-4'>Flexibility and Mobility Exercises</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center'>
                     <div className="card w-96 mt-4">
                         <img
                             src="https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -114,7 +114,7 @@ const Service = () => {
 
                 {/* Cardio Exercises  */}
                 <h2 className='text-2xl font-bold text-[#E6533C] text-center mt-4'>Cardio Exercises</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center'>
                     <div className="card w-96 mt-4">
                         <img
                             src="https://images.pexels.com/photos/1390403/pexels-photo-1390403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
