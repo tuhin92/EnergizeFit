@@ -151,9 +151,9 @@ const Service = () => {
                             <h2 className="card-title">Swimming</h2>
                         </div>
                     </div>
-                    <div className="card w-full mt-4">
+                    <div className="card w-96 mt-4">
                         <img
-                            src="https://images.pexels.com/photos/6516165/pexels-photo-6516165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            src="https://images.pexels.com/photos/3756521/pexels-photo-3756521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
                             alt="Push Up"
                             className="rounded-xl" />
                         <div className="card-body items-center text-center">
