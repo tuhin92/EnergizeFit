@@ -1,27 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Banner.css'; // Import your CSS
+import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
-    const words = ['healthy', 'fit', 'strong', 'active']; // Array of words
-    const [currentWord, setCurrentWord] = useState(words[0]); // Initial word
-    const [fade, setFade] = useState(false); // State to manage the fade effect
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(true);
-            setTimeout(() => {
-                setCurrentWord(prevWord => {
-                    const currentIndex = words.indexOf(prevWord);
-                    const nextIndex = (currentIndex + 1) % words.length;
-                    return words[nextIndex];
-                });
-                setFade(false);
-            }, 500); // Duration of fade out (matches the CSS animation duration)
-        }, 3000); // Change word every 3 seconds
-
-        return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, []);
-
     return (
         <div>
             <div className="hero min-h-screen bg-gradient-to-r from-[#000000] via-[#280404b3] to-[#000000]">
@@ -32,12 +12,32 @@ const Banner = () => {
                         alt="Fitness"
                     />
                     <div className='w-auto lg:w-3/6 ml-4'>
-                        <h1 className="text-5xl lg:text-7xl font-bold">
+                        {/* <h3 className='text-xl lg:text-2xl font-bold'> */}
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed out once, initially
+                                    'Get body in shape & stay healthy',
+                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    'Get body in shape & stay fit',
+                                    1000,
+                                    'Get body in shape & stay strong',
+                                    1000,
+                                    'Get body in shape & stay active',
+                                    1000
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{ fontSize: '2em', display: 'inline-block' }}
+                                repeat={Infinity}
+                            />
+                        {/* </h3> */}
+
+                        {/* <h1 className="text-5xl lg:text-7xl font-bold">
                             Get body in shape & stay{' '}
                             <span className={`word-transition ${fade ? 'fade-out' : 'fade-in'}`}>
                                 {currentWord}
                             </span>
-                        </h1>
+                        </h1> */}
                         <p className="py-6 text-[#767575] max-w-auto">
                             A huge selection of health and fitness content, healthy recipes, and transformation stories to help you get fit and stay fit!
                         </p>
