@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const Habbits = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: false,    // Animation triggers every time you scroll
+        });
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', AOS.refresh);
+        return () => {
+            window.removeEventListener('scroll', AOS.refresh);
+        };
+    }, [])
     return (
         <div className='max-w-7xl mx-auto'>
-            <h2 className='text-5xl text-center font-bold'>Change Your Habits</h2>
-            <p className='text-center mt-6 text-[#767575]'>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br /> access to a gym.</p>
+            <h2 data-aos="fade-up" className='text-5xl text-center font-bold'>Change Your Habits</h2>
+            <p data-aos="fade-up" className='text-center mt-6 text-[#767575]'>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br /> access to a gym.</p>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 justify-center'>
 
                 {/* first card  */}
-                <div className="card w-72 shadow-xl mx-auto">
+                <div data-aos="zoom-in-right" className="card w-72 shadow-xl mx-auto">
                     <figure>
                         <img
                             className='rounded-full'
@@ -25,7 +40,7 @@ const Habbits = () => {
                 </div>
 
                 {/* second card  */}
-                <div className="card w-72 shadow-xl mx-auto">
+                <div data-aos="zoom-in-right" className="card w-72 shadow-xl mx-auto">
                     <figure>
                         <img
                             className='rounded-full'
@@ -41,7 +56,7 @@ const Habbits = () => {
                 </div>
 
                 {/* third card  */}
-                <div className="card w-72 shadow-xl mx-auto">
+                <div data-aos="zoom-in-left" className="card w-72 shadow-xl mx-auto">
                     <figure>
                         <img
                             className='rounded-full'
@@ -57,7 +72,7 @@ const Habbits = () => {
                 </div>
 
                 {/* fourth card  */}
-                <div className="card w-72 shadow-xl mx-auto">
+                <div data-aos="zoom-in-left" className="card w-72 shadow-xl mx-auto">
                     <figure>
                         <img
                             className='rounded-full'
@@ -75,11 +90,11 @@ const Habbits = () => {
 
 
             {/* banner  */}
-            <div className="bg-[#222222] mt-12 rounded-2xl py-6">
+            <div data-aos="zoom-in-up" className="bg-[#222222] mt-12 rounded-2xl py-6">
                 <div className="flex flex-col lg:flex-row-reverse justify-around items-center">
-                        <img
-                            src="https://i.ibb.co/Pz3wxLp/Rectangle-22.png"
-                            className="max-w-sm rounded-lg shadow-2xl" />
+                    <img
+                        src="https://i.ibb.co/Pz3wxLp/Rectangle-22.png"
+                        className="max-w-sm rounded-lg shadow-2xl" />
                     <div className='p-8'>
                         <h1 className="text-5xl font-bold">Run an Extra <br />
                             Mile Easily</h1>

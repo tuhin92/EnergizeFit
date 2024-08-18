@@ -8,9 +8,16 @@ const Banner = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000, // Animation duration in milliseconds
-            once: true,     // Whether animation should happen only once
+            once: false,    // Animation triggers every time you scroll
         });
     }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', AOS.refresh);
+        return () => {
+            window.removeEventListener('scroll', AOS.refresh);
+        };
+    }, [])
     return (
         <div>
             <div className="hero min-h-screen bg-gradient-to-r from-[#000000] via-[#280404b3] to-[#000000]">
