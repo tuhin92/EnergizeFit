@@ -7,7 +7,7 @@ import Team from '../../../Components/Team';
 
 const Home = () => {
     return (
-        <div className='pb-12 bg-gradient-to-r from-[#000000] via-[#280404b3] to-[#000000]'>
+        <div className='pb-12 bg-gradient-to-r from-[#000000] via-[#280404b3] to-[#000000] p-2'>
             <Banner></Banner>
             <Habbits></Habbits>
             <Trainings></Trainings>
