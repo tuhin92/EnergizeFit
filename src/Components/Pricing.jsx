@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const Pricing = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: false,    // Animation triggers every time you scroll
+        });
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', AOS.refresh);
+        return () => {
+            window.removeEventListener('scroll', AOS.refresh);
+        };
+    }, [])
     return (
         <div className='max-w-7xl mx-auto my-8'>
             {/* schedule  */}
-            <h2 className='text-5xl font-bold text-center '>Schedule</h2>
+            <h2 data-aos="zoom-in" className='text-5xl font-bold text-center '>Schedule</h2>
 
 
             <div className='grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-10  mt-8'>
-                <div className="card bg-base-100 w-96">
+                <div data-aos="zoom-in-right" className="card bg-base-100 w-96">
                     <div className="card-body">
                         <h2 className="text-center font-bold text-2xl">MONDAY / WEDNESDAY / FRIDAY</h2>
                         {/* time  */}
@@ -23,7 +38,7 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-96">
+                <div data-aos="zoom-in-left" className="card bg-base-100 w-96">
                     <div className="card-body">
                         <h2 className="text-center font-bold text-2xl">TUESDAY/THURSDAY
                         </h2>
@@ -42,10 +57,10 @@ const Pricing = () => {
 
 
             {/* pricing  */}
-            <h2 className='text-5xl font-bold text-center my-12'>Pricing</h2>
+            <h2 data-aos="zoom-in" className='text-5xl font-bold text-center my-12'>Pricing</h2>
             <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                 {/* first card  */}
-                <div className="card bg-white w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+                <div data-aos="flip-left" className="card bg-white w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
                     <div className="card-body text-black">
                         <h2 className="text-center text-4xl">Basic</h2>
                         <div className='flex items-center justify-center gap-2'>
@@ -76,7 +91,7 @@ const Pricing = () => {
 
 
                 {/* second card  */}
-                <div className="card bg-[#11a296] w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+                <div data-aos="flip-up" className="card bg-[#11a296] w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
                     <div className="card-body text-black">
                         <h2 className="text-center text-4xl">Standard</h2>
                         <div className='flex items-center justify-center gap-2'>
@@ -107,7 +122,7 @@ const Pricing = () => {
 
 
                 {/* third card  */}
-                <div className="card bg-white w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+                <div data-aos="flip-right" className="card bg-white w-96 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
                     <div className="card-body text-black">
                         <h2 className="text-center text-4xl">Premium</h2>
                         <div className='flex items-center justify-center gap-2'>
