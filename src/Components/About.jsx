@@ -128,7 +128,53 @@ const About = () => {
 
 
 
+            {/* what we offer */}
+            <div>
+                <h1 data-aos="fade-up" className="text-4xl font-bold text-center mt-8">What We Offer</h1>
+                <div className='my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-24 justify-items-center'>
+                    {/* card 1  */}
+                    <div data-aos="flip-left" className="card bg-base-100 w-80 rounded-xl">
+                        <div className="card-body">
+                            <div className='border-2 p-8 rounded-xl'>
+                                <h2 className="text-2xl font-semibold text-center text-[#E6533C]">Classes for All Levels</h2>
+                                <p className='py-2 text-[#767575]'>We offer a wide range of classes tailored to different fitness levels and goals. Whether you're starting out or looking to push your limits, we have a class for you.</p>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    {/* second card  */}
+                    <div data-aos="flip-left" className="card bg-base-100 w-80 rounded-xl">
+                        <div className="card-body">
+                            <div className='border-2 p-8 rounded-xl'>
+                                <h2 className="text-2xl font-semibold text-center text-[#E6533C]">Classes for All Levels</h2>
+                                <p className='py-2 text-[#767575]'>We offer a wide range of classes tailored to different fitness levels and goals. Whether you're starting out or looking to push your limits, we have a class for you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* third card  */}
+                    <div data-aos="flip-right" className="card bg-base-100 w-80 rounded-xl">
+                        <div className="card-body">
+                            <div className='border-2 p-8 rounded-xl'>
+                                <h2 className="text-2xl font-semibold text-center text-[#E6533C]">Classes for All Levels</h2>
+                                <p className='py-2 text-[#767575]'>We offer a wide range of classes tailored to different fitness levels and goals. Whether you're starting out or looking to push your limits, we have a class for you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* fourth card  */}
+                    <div data-aos="flip-right" className="card bg-base-100 w-80 rounded-xl">
+                        <div className="card-body">
+                            <div className='border-2 p-8 rounded-xl'>
+                                <h2 className="text-2xl font-semibold text-center text-[#E6533C]">Classes for All Levels</h2>
+                                <p className='py-2 text-[#767575]'>We offer a wide range of classes tailored to different fitness levels and goals. Whether you're starting out or looking to push your limits, we have a class for you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
 
