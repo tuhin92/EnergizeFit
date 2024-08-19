@@ -33,7 +33,7 @@ const About = () => {
         <div className='max-w-7xl mx-auto my-6 p-4'>
             {/* Hero banner */}
             <div
-            data-aos="fade-up"
+                data-aos="fade-up"
                 className="hero min-h-96 rounded-2xl p-4"
                 style={{
                     backgroundImage: "url(https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
@@ -60,7 +60,7 @@ const About = () => {
             <div className="hero  min-h-96 mt-12">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <Swiper
-                    data-aos="fade-up"
+                        data-aos="fade-up"
                         effect={'cards'}
                         grabCursor={true}
                         modules={[EffectCards, Autoplay]}
@@ -107,6 +107,32 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            <div className="hero  min-h-96 mt-8">
+                <div className="hero-content flex-col lg:flex-row">
+                    <img data-aos="fade-up"
+                        src="https://img.freepik.com/free-photo/group-gymnastic-acrobatic-caucasian-men_155003-3508.jpg?t=st=1724099243~exp=1724102843~hmac=7149abc5f415e43d8ae3c7ce6993c8ab5d230a10cf71f8962e622cad0e01de3c&w=996"
+                        className="max-w-sm rounded-lg shadow-2xl" />
+                    <div data-aos="fade-up">
+                        <h1 className="text-4xl font-bold">Instructors</h1>
+                        <p className="py-6 max-w-2xl text-[#767575]">
+                            Our team of dedicated and certified trainers is here to guide you every step of the way. With a deep passion for fitness and a commitment to your success, our trainers bring both expertise and motivation to help you achieve your goals. Whether you're a beginner or a seasoned athlete, our instructors tailor their approach to meet your individual needs.
+                        </p>
+                        <button className="btn bg-[#E6533C] text-white rounded-lg px-8">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
         </div>
     );
 };
