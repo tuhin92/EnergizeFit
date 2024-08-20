@@ -14,6 +14,10 @@ import './styles.css';
 // Import required modules
 import { EffectCards, Autoplay } from 'swiper/modules';
 
+import { SiGmail } from "react-icons/si";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaTelegramPlane, FaFacebookF } from "react-icons/fa";
+
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -108,8 +112,6 @@ const About = () => {
                 </div>
             </div>
 
-
-
             <div className="hero  min-h-96 mt-8">
                 <div className="hero-content flex-col lg:flex-row">
                     <img data-aos="fade-up"
@@ -124,9 +126,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-
-
 
             {/* what we offer */}
             <div>
@@ -178,6 +177,33 @@ const About = () => {
 
 
 
+
+            {/* contact us  */}
+            <div>
+                <h1 data-aos="fade-up" className="text-4xl font-bold text-center mt-12">Contact Us</h1>
+                <div className=' flex justify-evenly mt-12'>
+                    <div data-aos="zoom-in" className='bg-red-700 p-4 rounded-2xl'>
+                        <button>
+                            <SiGmail className='h-12 w-12'></SiGmail>
+                        </button>
+                    </div>
+                    <div data-aos="zoom-in" className='bg-[#08ba4d] p-4 rounded-2xl'>
+                        <button>
+                            <IoLogoWhatsapp className='h-12 w-12'></IoLogoWhatsapp>
+                        </button>
+                    </div>
+                    <div data-aos="zoom-in" className='bg-blue-700 p-4 rounded-2xl'>
+                        <button>
+                            <FaFacebookF className='h-12 w-12'></FaFacebookF>
+                        </button>
+                    </div>
+                    <div data-aos="zoom-in" className='bg-cyan-600 p-4 rounded-2xl'>
+                        <button>
+                            <FaTelegramPlane className='h-12 w-12'></FaTelegramPlane>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     );
