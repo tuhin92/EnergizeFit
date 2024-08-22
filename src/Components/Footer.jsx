@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="mt-8 text-center text-gray-400 border-t border-gray-700 pt-4">
-                <p>&copy; 2023 DIUAcademiaReview. All rights reserved.</p>
+                <p>&copy; 2024 EnergizeFit. All rights reserved.</p>
             </div>
         </footer>
     );
