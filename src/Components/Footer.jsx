@@ -16,16 +16,17 @@ const Footer = () => {
         return () => {
             window.removeEventListener('scroll', AOS.refresh);
         };
-    }, [])
+    }, []);
+
     return (
         <footer className="bg-gray-900 text-white py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="space-y-4">
+                <div className="space-y-4 text-center md:text-left">
                     <h2 className="text-4xl font-bold text-[#E6533C]">EnergizeFit</h2>
                     <p className="text-gray-400">
                         We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
                     </p>
-                    <div className="flex space-x-4 mt-4">
+                    <div className="flex justify-center md:justify-start space-x-4 mt-4">
                         <a href="#" className="text-gray-400 hover:text-[#E6533C] transition">
                             <FaFacebookF className="h-5 w-5" />
                         </a>
